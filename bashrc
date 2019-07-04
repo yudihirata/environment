@@ -6,7 +6,8 @@ alias dtmux='tmux new-session \; \
  select-pane -t 2 \; \
  split-window -v \; \
  split-window -h -p 30 \; \
- split-window -v -p 23 \; \
+ split-window -v -p 50 \; \
+ split-window -v -p 50 \; \
  send-keys -t 4 htop Enter  \; \
  select-pane -t 0 \; \
  clock-mode -t 5  \; \
@@ -23,4 +24,6 @@ alias dtmux='tmux new-session \; \
  send-keys -t 3 "screen /dev/ttyUSB0 115200" Enter \; \
  select-pane -t 4 -T "htop" \; \
  select-pane -t 5 -T "clock" \; \
+ send-keys -t 6 cava Enter  \; \
+ select-pane -t 6 -T "sound" \; \
  select-pane -t 0'
